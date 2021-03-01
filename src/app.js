@@ -34,8 +34,9 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST"],
+    origin: "*",
+    /* origin: "http://localhost:3000",
+    methods: ["GET", "POST"],*/
   },
 });
 const port = /*3333*/ 8080;
