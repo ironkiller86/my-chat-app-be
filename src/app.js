@@ -40,7 +40,7 @@ const io = require("socket.io")(server, {
     methods: ["GET", "POST"],*/
   },
 });
-const port = /*3333*/ 8080;
+const port = process.env.PORT || 3333;
 /**
  *
  * @param {*} timeStamp
