@@ -25,7 +25,7 @@ const router = require("./router");
  *
  */
 const app = express();
-app.use(cors());
+//app.use(cors());
 app.use(router);
 app.use(express.json());
 /*
@@ -34,10 +34,8 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
-    /* origin: "http://localhost:3000",
-    methods: ["GET", "POST"],*/
   },
 });
 const port = process.env.PORT || 3333;
