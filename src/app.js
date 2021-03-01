@@ -26,7 +26,7 @@ const router = require("./router");
  */
 const app = express();
 //app.use(cors());
-app.use(router);
+/*app.use(router);*/
 app.use(express.json());
 /*
  *  creation of the serve
