@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --ignore users.json src/app.js"
+    "dev": "nodemon --ignore users.json src/app.js",
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
