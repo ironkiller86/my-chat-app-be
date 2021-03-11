@@ -26,7 +26,6 @@ const router = require("./router");
  */
 const app = express();
 //app.use(cors());
-/*app.use(router);*/
 app.use(express.json());
 /*
  *  creation of the serve
@@ -34,7 +33,7 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: /*"http://localhost:3000"*/ "http://donatotuzzolino.altervista.org",
+    origin: /*"http://localhost:3000"*/ "https://donatotuzzolino.com",
     methods: ["GET", "POST"],
   },
 });
