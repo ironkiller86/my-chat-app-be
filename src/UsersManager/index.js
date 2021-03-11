@@ -61,6 +61,5 @@ module.exports = {
   loadUsers,
   addUser,
   removeUser,
-  listNotes,
   readUserByUId,
 };
