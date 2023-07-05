@@ -33,7 +33,7 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: /*"http://localhost:3000"*/ "https://www.donatotuzzolino.com",
+    origin: "https://my-chat-app-fe.vercel.app",
     methods: ["GET", "POST"],
   },
 });
