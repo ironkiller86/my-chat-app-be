@@ -33,8 +33,9 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://my-chat-app-fe.vercel.app",//* 'http://localhost:3000' */,
-    methods: ["GET", "POST"],
+    origin: '*'
+  /*   origin: "https://my-chat-app-fe.vercel.app",
+    methods: ["GET", "POST"], */
   },
 });
 const port = process.env.PORT || 3333;
